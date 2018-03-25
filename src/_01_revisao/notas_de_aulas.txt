@@ -1,0 +1,48 @@
+Introdução
+Por que usar Java 8? Que problema resolve?
+    Problema: Código a ser executado depois
+        Listener de um botão
+        Rodar tasks em background(Thread)
+        Método de comparação numa ordenação
+     Soluções:
+        Classe Separada
+            ✔ Flexível: Argumentos customizados pelo construtor
+            ✔ Reusável
+            x Difícil acesso aos recursos da classe Main(que a chamou)
+        Class Principal implementar uma interface
+            ✔ Fácil acesso aos recursos da classe Main
+            ✔ Simplicidade
+            x Inflexibilidade
+            x Não reusável
+        Inner Class
+            ✔ Fácil acesso aos recursos da classe Main
+            x Resolução de conflito de nomes é esquisito (ClassMain.this.variavel)
+        Anonymous Class
+            ✔ Fácil acesso aos recursos da classe Main
+            ✔ Mais objetivo, porém ainda verboso
+            x Difícil de entender
+            x Não reusável
+     Vantagens x Desvantagens
+                    Separada | Implementada | Interna | Anônima
+     Flexibilidade     ✔           x
+     (argumentos customizados pelo construtor)
+     Reusabilidade     ✔                                   x
+     Acesso a Main     x           ✔             ✔         ✔
+     (acessar atributos e métodos da classe que a chamou)
+     Simplicidade                  ✔
+     Sem conflito de nomes                       x
+     Legibilidade                                x          x
+     (difícil de entender)
+     Objetividade                                           ✔
+     (Vai direto ao ponto)
+     Não verbosidade                                        x
+
+Revisar tópicos de apoio
+    Handler
+    Generics
+
+
+    Código mais flexível e reusável
+    Código mais simples de escrever
+    Execução mais rápida e uso mais eficiente da memória
+    Adequar-se aos novos tempos
